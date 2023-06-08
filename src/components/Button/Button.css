@@ -1,3 +1,7 @@
 button {
   font-size: 60px;
 }
+
+*:disabled {
+  background-color: dimgrey;
+}
