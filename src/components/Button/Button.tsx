@@ -11,6 +11,7 @@ const StyledButton = styled.button<ButtonProps>`
   font-weight: bold;
   border-radius: 3px;
   display: inline-block;
+
   padding: ${(props) =>
     props.size === "small"
       ? "7px 25px 8px"
@@ -20,8 +21,9 @@ const StyledButton = styled.button<ButtonProps>`
   color: ${(props) => (props.primary ? "#1b116e" : "#ffffff")};
   background-color: ${(props) => (props.primary ? "#6bedb5" : "#1b116e")};
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "default")};
   &:hover {
-    background-color: ${(props) => (props.primary ? "#55bd90" : "#6bedb5")};
+    background-color: ${(props) => (props.disabled ? "": "#6bedb5")};
   }
   &:active {
     border: solid 2px #1b116e;
