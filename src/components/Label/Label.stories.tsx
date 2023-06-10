@@ -9,8 +9,16 @@ export default {
 } as ComponentMeta<typeof Label>;
 
 const Template: ComponentStory<typeof Label> = (args) => <Label {...args} />;
-export const HelloWorld = Template.bind({});
+export const Enabled = Template.bind({});
 
-HelloWorld.args = {
+Enabled.args = {
   text: "I am a label"
+};
+
+const T2: ComponentStory<typeof Label> = (args) => <Label {...args} />;
+export const Disabled = T2.bind({});
+
+Disabled.args = {
+  text: "I am disabled label",
+  disabled: true,
 };
