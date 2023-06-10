@@ -8,14 +8,10 @@ import { RadioProps } from "./Radio.types";
 export const L1 = styled.label<RadioProps>`
    font-size: 1rem;
    font-weight: 600;
-   color: "333";
+   color: ${(props) => props.disabled ? "#777" : "#333"};
    font-family: StabilGrotesk, -apple-system, BlinkMacSystemFont,
        "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
        "Helvetica Neue", sans-serif;
-   ${({ disabled }) => disabled && `
-      color: "777";
-      cursor: not-allowed;
-   `}
 `;
 
 
@@ -112,7 +108,7 @@ const RadioButton = ({
             disabled={disabled}
             name = '1'
          />
-         <L1>{label} </L1>
+         <L1 disabled={disabled}>{label} </L1>
 
          <input
             type="radio"
@@ -120,7 +116,7 @@ const RadioButton = ({
             disabled={disabled}
             name = '1'
          />
-         <L1>{label} </L1>
+         <L1 disabled={disabled}>{label} </L1>
 
          <input
             type="radio"
@@ -128,7 +124,7 @@ const RadioButton = ({
             disabled={disabled}
             name = '1'
          />
-         <L1>{label} </L1>
+         <L1 disabled={disabled}>{label} </L1>
       </Wrapper>
 
   );
