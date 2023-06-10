@@ -18,7 +18,6 @@ const StyledImage = styled.div<ImageProps>`
 `;
 
 const Image: React.FC<ImageProps> = ({
-  size,
   disabled,
   ...props
 }) => {
