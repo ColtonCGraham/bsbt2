@@ -4,7 +4,17 @@ WORKDIR /Graham_Colton_ui_garden
 
 COPY package*.json ./
 
-RUN npm install
+RUN apt-get update
+
+RUN apt-get upgrade -y
+
+RUN apt-get install npm -y
+
+RUN apt-get install npm -y
+
+RUN npm i -g npx
+
+RUN npx sb init
 
 COPY . .
 
