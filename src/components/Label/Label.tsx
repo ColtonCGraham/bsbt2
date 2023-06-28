@@ -21,6 +21,7 @@ const Label: React.FC<LabelProps> = ({
   return (
     <StyledLabel
       disabled={disabled}
+      data-testid="t1"
       {...props}>
       {text}
     </StyledLabel>

@@ -35,7 +35,8 @@ const Table: FC<TableProps> = ({
 }) => {
   return (
 
-    <StyledTable disabled={disabled}>
+    <StyledTable disabled={disabled} data-testid="t1">
+      <tbody>
       <StyledRow>
         <StyledHeader disabled={disabled}
       {...props}>
@@ -72,6 +73,7 @@ const Table: FC<TableProps> = ({
 
 
       </StyledRow>
+      </tbody>
     </StyledTable>
   );
 };

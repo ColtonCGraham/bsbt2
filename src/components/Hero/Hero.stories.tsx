@@ -21,7 +21,7 @@ Primary.args = {
 };
 
 export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & HeroProps) => (
-  <Hero data-testId="InputField-id" {...args} />
+  <Hero data-testId="HeroField-id" {...args} />
 );
 Disabled.args = {
   disabled: true,

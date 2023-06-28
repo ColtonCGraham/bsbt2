@@ -14,7 +14,6 @@ const StyledImage = styled.div<ImageProps>`
   width:  325px;
   background-repeat: no-repeat;
   background-position: center;
-
 `;
 
 const Image: React.FC<ImageProps> = ({
@@ -23,7 +22,7 @@ const Image: React.FC<ImageProps> = ({
 }) => {
   return (
 
-    <StyledImage disabled={disabled}>
+    <StyledImage disabled={disabled} data-testid="ImageTest" >
 
 
     </StyledImage>

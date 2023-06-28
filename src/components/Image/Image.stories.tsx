@@ -2,7 +2,6 @@ import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
 import Image from "./Image";
 import { ImageProps } from "./Image.types";
-
 const meta: Meta<typeof Image> = {
   component: Image,
   title: "ReactComponentLibrary/Image",

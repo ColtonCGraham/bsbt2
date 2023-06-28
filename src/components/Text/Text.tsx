@@ -16,8 +16,10 @@ const Text: React.FC<TextProps> = ({
   return (
     <StyledText
       disabled={disabled}
+      data-testid="t1"
       {...props}>
       {text}
+
     </StyledText>
   );
 };

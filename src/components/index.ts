@@ -7,3 +7,4 @@ export * from "./Radio";
 export * from "./Image";
 export * from "./Hero";
 export * from "./Card";
+export * from "./Label";

@@ -101,11 +101,13 @@ const RadioButton = ({
   ...props
 }: RadioProps) => {
   return (
-      <Wrapper>
+      <Wrapper >
          <input
+
             type="radio"
             id={id}
             disabled={disabled}
+            data-testid="t1"
             name = '1'
          />
          <L1 disabled={disabled}>{label} </L1>

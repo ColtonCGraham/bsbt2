@@ -21,7 +21,7 @@ Primary.args = {
 };
 
 export const Disabled: Story = (args: React.JSX.IntrinsicAttributes & DropdownProps) => (
-  <Dropdown data-testId="Drop-id" {...args} />
+  <Dropdown data-testId="Drop-id2" {...args} />
 );
 Disabled.args = {
   disabled: true,
