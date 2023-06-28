@@ -2,7 +2,7 @@ FROM dokken/ubuntu-18.04
 
 WORKDIR /Graham_Colton_Coding_Assignment12
 
-COPY source dest package*.json ./
+COPY package*.json ./
 
 RUN npm install
 
