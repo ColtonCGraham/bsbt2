@@ -1,6 +1,6 @@
 FROM dokken/ubuntu-18.04
 
-WORKDIR /Graham_Colton_Coding_Assignment12
+WORKDIR /Graham_Colton_ui_garden
 
 COPY package*.json ./
 
